@@ -1,0 +1,2 @@
+创建dict: dict1 = dict()  dict = {}
+取dict的values和key: dict.keys() dict.values()
