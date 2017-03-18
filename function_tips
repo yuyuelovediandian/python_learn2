@@ -1,0 +1,9 @@
+map()
+reduce()
+filter()
+lambda x,y:x+y
+list1 = []
+def add():
+  pass
+map(add,list1)
+reduce(lambda s,x:s+x,map(add,list1))
