@@ -14,5 +14,19 @@
 series重新索引: s.reindex(index= [],fill_value=0)
 series四则运算：s1.add(s2,fill_value=10)/2   s1.sub  s1.div   s1.mul
 series排序: s.sort_values(ascending=False)
+dataframe排序: df.sort(columns=[],ascending = [])
+series 转化 list: s.tolist()
+series 转化 dict: s.to_dict()
+dict 转化 series: pd.Series(dict)
 series排名: s.rank(ascending=False,method='first')   可选：first,average,max,min
 日期获取: pd.date_range('',periods=3)
+统计方法:  df.mean(axis=1,skipna=False)  df.mean()  
+          count describe min max argmiin argmax(最大值的索引) quantile sum median var std skew kurt cumsum diff cummin 
+遍历: for column_name, series in df.iteritems():
+          for index,value in series.iteritems():
+                print(value)
+     for column in df.columns:
+        for index in df.index:
+                print(df[column][index])
+合并: df1.merge(df2,on = 'index',how = 'left')
+     df1.append(df2,ignore_index = True)
