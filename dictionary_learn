@@ -1,2 +1,10 @@
 创建dict: dict1 = dict()  dict = {}
-取dict的values和key: dict.keys() dict.values()
+取dict的values和key: dict1.keys() dict1.values()
+遍历dict: for key,item in dict1.items():
+            print(dict1[key])
+删除字典中的元素: dict.clear()  del dict['']   dict.pop('')
+复制: dict.copy()
+优雅的获取字典: dict.get(key)
+更新字典: dict.update()
+字典排序:  sorted(dict.items(),key = lambda d:d[0])  #按键排序
+          sorted(dict.items(),key = lambda d:d[1])  #按值排序
