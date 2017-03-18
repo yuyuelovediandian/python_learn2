@@ -1,0 +1,18 @@
+
+初始化DataFrame: pd.DataFrame(data=[],acolumns=[],index=[])
+初始化Series:    pd.Series(data=[],index=[])
+可以用array,dict创建dataframe  其中dict创建dataframe时，dict的index转化为df的columns,dict创建series时，dict的index转化为series的index
+列操作: df['']
+        df[['','']]
+行操作: df.loc[]
+        df[:2]
+       df.iloc[]
+索引和切片: df.ix[:,:] df.ix[:,['','']]  默认行为先(axis=0)  可以设定为axis=1  
+填充空值:  df.fillna(0)
+获取index,columns: df.index  df.columns
+获取series的值和索引: s.index s.values
+series重新索引: s.reindex(index= [],fill_value=0)
+series四则运算：s1.add(s2,fill_value=10)/2   s1.sub  s1.div   s1.mul
+series排序: s.sort_values(ascending=False)
+series排名: s.rank(ascending=False,method='first')   可选：first,average,max,min
+日期获取: pd.date_range('',periods=3)
